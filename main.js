@@ -1,4 +1,4 @@
-console.log("it works");
+/* console.log("it works"); */
 
 
 const ulEl=document.getElementById("email-list");
@@ -11,7 +11,7 @@ for (let i=0; i<10; i++){
    fetch(api_endpoint)
   .then(response => response.json())
   .then(data => {
-  	// the API response data isi inside the parameter
+  	// the API response data is inside the parameter
   	console.log(data);
     const liEl= document.createElement("li");
     liEl.innerHTML=data.response;
